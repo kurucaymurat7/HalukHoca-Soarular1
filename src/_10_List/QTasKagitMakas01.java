@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class QTasKagitMakas01 {
     public static void main(String[] args) {
 
-        System.out.println("TAS KAGİT MAKAS OYUNU...");
+        System.out.println("TAS KAGİT MAKAS OYUNU... BASARİLAR");
         Scanner scan = new Scanner(System.in);
         Random rand = new Random();
         int ksecim = 0, bsecim = 0;
@@ -20,6 +20,7 @@ public class QTasKagitMakas01 {
             for (i = 1; i <= 3; i++) {
                 System.out.println("Seçimin nedir ? 1...TAS , 2...KAGIT , 3...MAKAS ");
                 ksecim = scan.nextInt();
+
                 if (ksecim == 1) System.out.println("Kullanici secimi : TAS ");
                 if (ksecim == 2) System.out.println("Kullanici secimi : KAGİT");
                 if (ksecim == 3) System.out.println("Kullanici secimi : MAKAS ");
