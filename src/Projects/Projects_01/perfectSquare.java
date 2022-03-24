@@ -59,8 +59,18 @@ public class perfectSquare {
         //  code Start here don't change before this line
         // kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
 
-
-
+        boolean tumkare = false;
+        for (int i = 0; i < input; i++) {
+            if ((i*i) == input) {
+                tumkare = true;
+                break;
+            }
+        }
+        if (tumkare) {
+            System.out.println("Tüm karedir.");
+        } else {
+            System.out.println("Tüm kare degildir.");
+        }
     }
 
 }

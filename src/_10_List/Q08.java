@@ -20,8 +20,16 @@ public class Q08 {
         // list.set ile
         // temp kullanarak
 
+        String[] isimler= {"Umit","Emin","Kemal","Kerem","Taylan","Orhan","Sinan","Furkan","Ahmet","Ali"};
+        String[] yeniisimler = isimler;
 
+        System.out.println(Arrays.toString(isimler));
 
+        String temp = isimler [2]; // temp = "Kemal"
+        yeniisimler[2] = isimler[7]; //yenisimler2 = Furkan
+        yeniisimler[7] = temp; // yeniismler7 = Kemal
+
+        System.out.println(Arrays.toString(yeniisimler));
 
     }
 
