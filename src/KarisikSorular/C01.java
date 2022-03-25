@@ -1,24 +1,35 @@
 package KarisikSorular;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class C01 {
 
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Ne kadar çay ? ");
-        double caymiktari = scan.nextDouble();
-        System.out.println("Ne kadar şeker ? ");
-        double sekermiktari = scan.nextDouble();
 
-        double sonuc = ((caymiktari * sekermiktari * 1.7)*365)/1000;
+        // create an ArrayList which going to
+        // contains a list of Numbers
+        ArrayList<Integer> Numbers = new ArrayList<Integer>();
 
-        System.out.println("Yılda " + sonuc + " kg şeker kullanıyor...");
+        // Add Number to list
+        Numbers.add(23);
+        Numbers.add(32);
+        Numbers.add(45);
+        Numbers.add(63);
 
+        // apply removeIf() method
+        // we are going to remove numbers divisible by 3
+        Numbers.removeIf(n -> (n % 3 == 0));
+
+        // print list
+        for (int i : Numbers) {
+            System.out.println(i);
+        }
 
     }
-
 }
 
 
