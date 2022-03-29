@@ -38,6 +38,7 @@ public class Q10_ZorSoru {
             }
             toplamliste.add(toplam);
         }
+
         for (int i = 0; i <= liste.size(); i++) {
             if (liste.get(i).equals("")) {
                 liste.removeAll(Collections.singleton(""));
